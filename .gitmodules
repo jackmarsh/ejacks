@@ -1,0 +1,3 @@
+[submodule "ejacks/godit"]
+	path = ejacks/godit
+	url = https://github.com/nsf/godit

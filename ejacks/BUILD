@@ -3,4 +3,7 @@ go_binary(
   srcs = [
     "main.go",
   ],
+  deps = [
+    "//third_party/go:termbox",
+  ],
 )
