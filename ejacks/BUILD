@@ -4,6 +4,6 @@ go_binary(
     "main.go",
   ],
   deps = [
-    "//third_party/go:termbox",
+    "//third_party/go:tcell",
   ],
 )
