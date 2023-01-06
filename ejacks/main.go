@@ -1,10 +1,12 @@
 package main
 
-import(
+import (
 	"fmt"
 	"time"
 	
 	"github.com/gdamore/tcell/v2"
+
+	"ejacks/editor"
 )
 
 func main() {
@@ -18,9 +20,9 @@ func main() {
 		panic(err)
 	}
 	defer screen.Fini()
-	time.Sleep(2 * time.Second)
-
 	screen.EnablePaste()
-	editor := editor.NewEditor(screen)
 	
+	editor := editor.NewEditor(screen)
+	editor.Run()
+	time.Sleep(10 * time.Second)
 }

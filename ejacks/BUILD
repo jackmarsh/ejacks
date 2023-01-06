@@ -5,5 +5,6 @@ go_binary(
   ],
   deps = [
     "//third_party/go:tcell",
+      "//ejacks/editor",
   ],
 )
